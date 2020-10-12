@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Login Page</title>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <script src="static/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+      <br><br>
+      <h1>Login</h1>
+      <br><br>
+    <form action="process/login.php" method="post">
+        <div class="form-group">
+            <label for="email">Email : </label>
+            <input type="email" name="email" id="email" class="form-control" required>
+        </div> 
+        <div class="form-group">
+            <label for="password">Password : </label>
+            <input type="password" name="password" class="form-control" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+        </div> 
+        <center>
+            <button class="btn btn-primary">Login</button>
+        </center>  
+    </form>
+    </div>
+</body>
+</html>
